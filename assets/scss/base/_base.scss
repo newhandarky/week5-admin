@@ -1,0 +1,25 @@
+// 共通設定
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+
+/* 全域 border box */
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Roboto Mono', monospace, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+img{
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+

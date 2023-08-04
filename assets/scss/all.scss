@@ -1,0 +1,17 @@
+// base
+@import "./base/reset";
+@import "./base/base";
+@import "./base/generic";
+@import "./base/my-variable";
+
+// util
+@import "./utils/mixin";
+
+// layout
+@import "./layout/header-admin";
+@import "./layout/header-assignment";
+@import "./layout/header-right";
+@import "./layout/menu";
+
+// pages
+@import './pages/assignment.scss';

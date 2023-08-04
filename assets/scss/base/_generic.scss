@@ -1,0 +1,18 @@
+.hover-opacity {
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// 字體-大小
+.font-sm {
+    font-size: 0.875rem;
+}
+.font-xs {
+    font-size: 0.75rem;
+}
+
+// 字形
+.roboto-mono{
+    font-family: 'Roboto Mono', monospace;
+}
