@@ -1,3 +1,13 @@
-.index-title {
-  font-size: 100px;
+.hover-bg-light{
+  &:hover{
+    background: $light;
+  }
+}
+
+.card-article{
+  max-width: 488px;
+}
+
+aside{
+  width: 320px;
 }

@@ -1,11 +1,13 @@
-// base
-@import "./base/reset";
-@import "./base/base";
-@import "./base/generic";
-@import "./base/my-variable";
-
 // util
 @import "./utils/mixin";
+
+// vendors
+@import 'bootstrap/scss/bootstrap.scss';
+
+// base
+@import "./base/generic";
+@import "./base/my-variable";
+@import "./base/base";
 
 // layout
 @import "./layout/header-admin";
@@ -14,4 +16,5 @@
 @import "./layout/menu";
 
 // pages
-@import './pages/assignment.scss';
+@import './pages/index';
+@import './pages/assignment';

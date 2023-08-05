@@ -5,6 +5,9 @@
 }
 
 // 字體-大小
+.font-md {
+    font-size: 1.25rem;
+}
 .font-sm {
     font-size: 0.875rem;
 }
@@ -15,4 +18,20 @@
 // 字形
 .roboto-mono{
     font-family: 'Roboto Mono', monospace;
+}
+
+// 追加使用者頭像的寬高
+.rounded-circle{
+    width: 40px;
+    max-height: 40px;
+}
+
+.container{
+    max-width: 984px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.br-margin{
+    margin-bottom: 21px;
 }
