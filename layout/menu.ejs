@@ -2,43 +2,55 @@
     <div>
         <h1><a class="d-block mb-8" href="index.html">我是標題</a></h1>
         <ul>
-            <li class="mb-6">
-                <a class="d-flex text-dark link-success fw-bold" href=""><span class="fs-7 me-3 material-symbols-outlined">
+            <li class="position-relative mb-6">
+                <div class="d-inline bg-success" data-div="dashboard"></div>
+                <a class="d-flex text-dark link-success fw-bold dashboard" href=""><span
+                        class="fs-7 me-3 material-symbols-outlined">
                         insert_chart
                     </span>
                     Dashboard
                 </a>
             </li>
-            <li class="mb-6">
-                <a class="d-flex text-dark link-success fw-bold" href=""><span class="fs-7 me-3  material-symbols-outlined">
+            <li class="position-relative mb-6">
+                <div class="d-inline bg-success" data-div="question"></div>
+                <a class="d-flex text-dark link-success fw-bold question" href=""><span
+                        class="fs-7 me-3  material-symbols-outlined">
                         forum
                     </span>
                     Question
                 </a>
             </li>
-            <li class="mb-6">
-                <a class="d-flex text-dark link-success fw-bold" href="assignment.html"><span class="fs-7 me-3  material-symbols-outlined">
+            <li class="position-relative mb-6">
+                <div class="d-inline bg-success" data-div="assignment"></div>
+                <a class="d-flex text-dark link-success fw-bold assignment" href="assignment.html"><span
+                        class="fs-7 me-3  material-symbols-outlined">
                         assignment
                     </span>
                     Assignment
                 </a>
             </li>
-            <li class="mb-6">
-                <a class="d-flex text-dark link-success fw-bold" href=""><span class="fs-7 me-3  material-symbols-outlined">
+            <li class="position-relative mb-6">
+                <div class="d-inline bg-success" data-div="course"></div>
+                <a class="d-flex text-dark link-success fw-bold course" href=""><span
+                        class="fs-7 me-3  material-symbols-outlined">
                         video_library
                     </span>
                     Course
                 </a>
             </li>
-            <li class="mb-6">
-                <a class="d-flex text-dark link-success fw-bold" href=""><span class="fs-7 me-3  material-symbols-outlined">
+            <li class="position-relative mb-6">
+                <div class="d-inline bg-success" data-div="admin"></div>
+                <a class="d-flex text-dark link-success fw-bold admin" href=""><span
+                        class="fs-7 me-3  material-symbols-outlined">
                         group
                     </span>
                     Admin
                 </a>
             </li>
-            <li class="mb-4">
-                <a class="d-flex text-dark link-success fw-bold" href=""><span class="fs-7 me-3  material-symbols-outlined">
+            <li class="position-relative mb-4">
+                <div class="d-inline bg-success" data-div="settings"></div>
+                <a class="d-flex text-dark link-success fw-bold settings" href=""><span
+                        class="fs-7 me-3  material-symbols-outlined">
                         settings
                     </span>
                     Settings
@@ -47,10 +59,11 @@
         </ul>
     </div>
 
-    <div class="d-flex ">
+    <div class="d-flex">
         <div>
             <img class="rounded-circle me-4"
-            src="https://github.com/newhandarky/week5-admin/blob/main/assets/images/andychen.jpeg?raw=true" alt="使用者頭像1">
+                src="https://github.com/newhandarky/week5-admin/blob/main/assets/images/andychen.jpeg?raw=true"
+                alt="使用者頭像1">
         </div>
         <div>
             <h3 class="fw-bold h6">Andy Chen <br><span class="font-sm text-secondary">andy0401@mail.com</span>
@@ -60,3 +73,15 @@
 
 
 </nav>
+
+<script>
+    let str = location.pathname.split("/");
+    let newStr = str[str.length - 1].split('.');
+    let renderPageLink = function(){
+        // 抓當前頁面+當前頁面頁籤上色
+        document.querySelector(`.${newStr[0]}`).parentElement.firstElementChild.classList.add("onPage")
+        document.querySelector(`.${newStr[0]}`).classList.remove("text-dark");
+    }
+
+
+</script>

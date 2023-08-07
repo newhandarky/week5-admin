@@ -32,3 +32,9 @@
     padding-right: 32px;
     padding-bottom: 32px;
 }
+
+.pointer{
+    &:hover{
+        cursor: pointer;
+    }
+}

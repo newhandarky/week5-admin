@@ -18,10 +18,10 @@
           <div class="d-flex">
             <h2 class="fs-4 me-12">Assignment</h2>
             <div class="d-flex align-items-center">
-              <a class="d-flex text-dark fw-bold" href="">All Courses<span
+              <span class="d-flex text-dark fw-bold pointer p-0" href="">All Courses<span
                   class="ms-2 text-success material-symbols-outlined">
                   expand_more
-                </span></a>
+                </span></span>
             </div>
 
           </div>
@@ -30,9 +30,9 @@
         </header>
 
         <div class="d-flex justify-content-between align-items-center mb-2">
-          <a class="d-flex text-dark fw-bold" href="">All(4)<span class="ms-2 text-success material-symbols-outlined">
+          <span class="d-flex text-dark fw-bold pointer p-0" href="">All(4)<span class="ms-2 text-success material-symbols-outlined">
               expand_more
-            </span></a>
+            </span></span>
           <p class="font-xs text-secondary">2 comments</p>
         </div>
 
@@ -87,16 +87,16 @@
           </aside>
 
           <section>
-            <div class="card rounded-0 mb-4">
+            <div class="card rounded-0">
               <div class="card-header py-3 bg-light d-flex align-items-center justify-content-between">
                 <div>
                   <p class="font-xs mb-1">Chapter Assignment 2 / HTML&CSS</p>
                   <h3>Please check this file for me, thanks!</h3>
                 </div>
                 <div>
-                  <a class="d-flex text-dark link-success" href="#"><span class="material-symbols-outlined">
+                  <span class="d-flex text-dark link-success pointer p-0" href="#"><span class="material-symbols-outlined">
                       more_vert
-                    </span></a>
+                    </span></span>
                 </div>
               </div>
 
@@ -124,7 +124,8 @@
                 </div>
 
 
-                <div class="d-flex justify-content-between mb-4">
+                <div id="userBlock" class="d-flex justify-content-between mb-4">
+
                   <img class="rounded-circle me-2"
                     src="https://github.com/newhandarky/week5-admin/blob/main/assets/images/andychen.jpeg?raw=true"
                     alt="使用者頭像1">
@@ -134,17 +135,24 @@
                         <h4>Andy Chen (You)</h4>
                         <p class="font-xs text-secondary mb-4">13:24 AM (1 hours ago)</p>
                       </div>
-                      <div>
-                        <a href="">
-                          <span class="icon-fill-0 material-symbols-outlined">
-                            star
+                      <div class="d-flex">
+                        <div>
+                          <span class="change-icon pointer p-0" href="">
+                            <img class="star-icon"
+                            src="https://raw.githubusercontent.com/newhandarky/week5-admin/9b6c847ca0bd18b662d5d30f66f51c0eff8636e9/assets/images/star_FILL0_wght400_GRAD0_opsz48.svg"
+                            alt="">
+                            <img class="star-icon d-none"
+                            src="https://raw.githubusercontent.com/newhandarky/week5-admin/9b6c847ca0bd18b662d5d30f66f51c0eff8636e9/assets/images/star_FILL1_wght400_GRAD0_opsz48.svg"
+                            alt="">
                           </span>
-                        </a>
-                        <a href="">
-                          <span class="material-symbols-outlined">
-                            edit
+                        </div>
+                        <div>
+                          <span class="ms-6 pointer p-0" href="">
+                            <span class="material-symbols-outlined">
+                              edit
+                            </span>
                           </span>
-                        </a>
+                        </div>
                       </div>
                     </div>
                     <p class="font-sm">Hi David, by default, an image is rendered inline, like a letter so it sits
@@ -160,21 +168,74 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex justify-content-between">
+            
+            <div id="userBlock__btn" class="d-flex justify-content-between mt-4">
               <div class="d-flex align-items-center">
-                <a class="text-dark link-success me-6" href="">
+                <span class="btn p-0 text-dark link-success me-6" href="">
                   <span class="material-symbols-outlined">
                     chevron_left
                   </span>
-                </a>
-                <a class="text-dark link-success" href="">
+                </span>
+                <span class="btn p-0 text-dark link-success" href="">
                   <span class="material-symbols-outlined">
                     chevron_right
                   </span>
-                </a>
+                </span>
               </div>
               <div>
                 <button class="btn btn-outline-success py-2 px-8 rounded-0 me-4">Mark as read
+                </button>
+                <button id="reply" class="btn btn-success py-2 px-8 rounded-0">Reply
+                </button>
+              </div>
+            </div>
+
+            <div id="textEditor" class="card rounded-0 position-relative border-top-0 d-none">
+              <div class="card-header py-4 px-6 d-flex align-items-center">
+                <span class="pointer p-0 d-flex" href="">Body Text
+                  <span class="ms-2 material-symbols-outlined">
+                    arrow_drop_down
+                    </span>
+                  </span>
+                <span class="btn ms-6 p-0 d-flex" href="">
+                  <span class="material-symbols-outlined">
+                    format_bold
+                  </span>
+                </span>
+                <span class="btn ms-6 p-0 d-flex" href="">
+                  <span class="material-symbols-outlined">
+                    format_italic
+                  </span>
+                </span>
+                <span class="btn ms-6 p-0 d-flex" href="">
+                  <span class="material-symbols-outlined">
+                    format_list_bulleted
+                  </span>
+                </span>
+                <span class="btn ms-6 p-0 d-flex" href="">
+                  <span class="material-symbols-outlined">
+                    format_list_numbered
+                  </span>
+                </span>
+                <span class="btn ms-6 p-0 d-flex" href="">
+                  <span class="material-symbols-outlined">
+                    image
+                  </span>
+                </span>
+                <span class="btn ms-6 p-0 d-flex" href="">
+                  <span class="material-symbols-outlined">
+                    link
+                  </span>
+                </span>
+                <span class="btn ms-6 p-0 d-flex" href="">
+                  <span class="img-rotate material-symbols-outlined">
+                    unfold_more
+                    </span>
+                </span>
+              </div>
+              <textarea class="card-body border-0" rows="10" placeholder="Reply an answer…"></textarea>
+              <div class="position-absolute bottom-0 end-0 mb-4 me-6">
+                <button id="cancel" class="btn btn-outline-success py-2 px-8 rounded-0 me-2">Cancel
                 </button>
                 <button class="btn btn-success py-2 px-8 rounded-0">Reply
                 </button>
@@ -185,7 +246,46 @@
         </main>
       </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script type="module" src="../main.js"></script>
 </body>
+
+<script>
+  let icons = document.querySelectorAll(".star-icon");
+  let change = document.querySelector(".change-icon");
+  let userBlock = document.querySelector("#userBlock");
+  let userBlockBtn = document.querySelector("#userBlock__btn");
+  let textEditor = document.querySelector("#textEditor");
+  let cancel = document.querySelector("#cancel");
+  let reply = document.querySelector("#reply");
+
+
+  window.onload = function () {
+    // 抓當前頁面+當前頁面頁籤上色
+    renderPageLink();
+
+    // 星星全滿與中空切換
+    change.addEventListener("click", function (e) {
+      icons.forEach(function (item, index) {
+        item.classList.toggle("d-none");
+      })
+    })
+
+    reply.addEventListener("click", function(){
+      userBlock.classList.add("d-none");
+      userBlockBtn.classList.add("d-none");
+      textEditor.classList.remove("d-none");
+    })
+
+    cancel.addEventListener("click", function(){
+      userBlock.classList.remove("d-none");
+      userBlockBtn.classList.remove("d-none");
+      textEditor.classList.add("d-none");
+    })
+
+
+  }
+</script>
+
 
 </html>

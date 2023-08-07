@@ -12,6 +12,11 @@ aside{
   width: 320px;
 }
 
-.icon-fill-0{
-  fill:0;
+.star-icon{
+  width: 24px;
+  height: 24px;
+}
+
+.img-rotate{
+  @include img-rotate;
 }
