@@ -18,5 +18,5 @@ aside{
 }
 
 .img-rotate{
-  @include img-rotate;
+  @include img-rotate(90deg, 0s);
 }

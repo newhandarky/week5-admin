@@ -1,0 +1,14 @@
+.pagination a{
+    color: $success;
+}
+
+.hover-bg-success {
+    &:hover {
+        background: $success;
+        color: $white;
+    }
+}
+
+.thisPage{
+    background: $success;
+}

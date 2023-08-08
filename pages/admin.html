@@ -13,223 +13,224 @@
     <div class="content d-flex">
 
         <%- include("./layout/menu"); -%>
-            <div class="container">
-                <header class="d-flex justify-content-between py-8">
-                    <div class="d-flex">
-                        <h2 class="fs-4 me-12">Admin</h2>
-                        <div class="d-flex align-items-center">
-                            <span class="d-flex text-dark fw-bold p-0">
-                                <span class="material-symbols-outlined text-success me-2">
-                                    add
-                                </span>Add New Admin</span>
+            <%- include("./layout/models"); -%>
+                <div class="container">
+                    <header class="d-flex justify-content-between py-8">
+                        <div class="d-flex">
+                            <h2 class="fs-4 me-12">Admin</h2>
+                            <div class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newAdmin">
+                                <span class="d-flex text-dark fw-bold p-0 pointer">
+                                    <span class="material-symbols-outlined text-success me-2">
+                                        add
+                                    </span>Add New Admin</span>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <%- include("./layout/header-right"); -%>
+                    </header>
 
-                    <%- include("./layout/header-right"); -%>
-                </header>
+                    <main class="mb-14">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="pb-1 ps-0 d-flex align-items-center" scope="col">ID
+                                        <span class="material-symbols-outlined text-success font-md ms-1">
+                                            arrow_downward
+                                        </span>
+                                    </th>
+                                    <th class="pb-1 ps-0" scope="col">Name</th>
+                                    <th class="pb-1 ps-0" scope="col">Email</th>
+                                    <th class="pb-1 ps-0" scope="col">Verified</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin">
+                                    <th scope="row" class="fw-normal px-0 py-4">#1</th>
+                                    <td class="px-0 py-4">Emir Wicks</td>
+                                    <td class="px-0 py-4">emir.wicks@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
+                                        </span>
+                                    </td>
+                                </tr>
 
-                <main>
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th class="pb-1 ps-0 d-flex align-items-center" scope="col">ID
-                                    <span class="material-symbols-outlined text-success font-md ms-1">
-                                        arrow_downward
-                                        </span>
-                                </th>
-                                <th class="pb-1 ps-0" scope="col">Name</th>
-                                <th class="pb-1 ps-0" scope="col">Email</th>
-                                <th class="pb-1 ps-0" colspan="2">Verified</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#1</th>
-                                <td class="px-0 py-4">Emir Wicks</td>
-                                <td class="px-0 py-4">emir.wicks@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
-                                        </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
 
-                            
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#2</th>
-                                <td class="px-0 py-4">Zaina Goldsmith</td>
-                                <td class="px-0 py-4">zaina.goldsmith@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#2</th>
+                                    <td class="px-0 py-4">Zaina Goldsmith</td>
+                                    <td class="px-0 py-4">zaina.goldsmith@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#3</th>
-                                <td class="px-0 py-4">Mahima Lopez</td>
-                                <td class="px-0 py-4">mahima.lopez@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#3</th>
+                                    <td class="px-0 py-4">Mahima Lopez</td>
+                                    <td class="px-0 py-4">mahima.lopez@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#4</th>
-                                <td class="px-0 py-4">Pharrell Murray</td>
-                                <td class="px-0 py-4">pharrell.murray@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#4</th>
+                                    <td class="px-0 py-4">Pharrell Murray</td>
+                                    <td class="px-0 py-4">pharrell.murray@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#5</th>
-                                <td class="px-0 py-4">Annika Mcbride</td>
-                                <td class="px-0 py-4">annika.mcbride@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#5</th>
+                                    <td class="px-0 py-4">Annika Mcbride</td>
+                                    <td class="px-0 py-4">annika.mcbride@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#6</th>
-                                <td class="px-0 py-4">Fatimah Clark</td>
-                                <td class="px-0 py-4">fatimah.clark@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#6</th>
+                                    <td class="px-0 py-4">Fatimah Clark</td>
+                                    <td class="px-0 py-4">fatimah.clark@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#7</th>
-                                <td class="px-0 py-4">Klaudia Rhodes</td>
-                                <td class="px-0 py-4">klaudia.rhodes@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#7</th>
+                                    <td class="px-0 py-4">Klaudia Rhodes</td>
+                                    <td class="px-0 py-4">klaudia.rhodes@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#8</th>
-                                <td class="px-0 py-4">Tillie Lucero</td>
-                                <td class="px-0 py-4">tillie.lucero@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#8</th>
+                                    <td class="px-0 py-4">Tillie Lucero</td>
+                                    <td class="px-0 py-4">tillie.lucero@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#9</th>
-                                <td class="px-0 py-4">Sabrina Stephenson</td>
-                                <td class="px-0 py-4">sabrina.stephenson@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#9</th>
+                                    <td class="px-0 py-4">Sabrina Stephenson</td>
+                                    <td class="px-0 py-4">sabrina.stephenson@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th scope="row" class="fw-normal px-0 py-4">#10</th>
-                                <td class="px-0 py-4">Annie Smith</td>
-                                <td class="px-0 py-4">annie.smith@mail.com</td>
-                                <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                    <span>Yes</span>
-                                    <span class="d-flex">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
-                                            visibility
+                                <tr class="pointer">
+                                    <th scope="row" class="fw-normal px-0 py-4">#10</th>
+                                    <td class="px-0 py-4">Annie Smith</td>
+                                    <td class="px-0 py-4">annie.smith@mail.com</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
+                                        <span>Yes</span>
+                                        <span class="d-flex">
+                                            <span class="material-symbols-outlined pointer text-dark link-success">
+                                                visibility
+                                            </span>
+                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                                edit
+                                            </span>
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                            edit
-                                        </span>
-                                    </span>
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
 
 
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
 
 
-                </main>
+                    </main>
 
+                    <%- include("./layout/pagination"); -%>
 
-
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-                crossorigin="anonymous"></script>
-            <script type="module" src="../main.js"></script>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+                    crossorigin="anonymous"></script>
+                <script type="module" src="../main.js"></script>
 </body>
 
 <script>
@@ -240,31 +241,34 @@
     let textEditor = document.querySelector("#textEditor");
     let cancel = document.querySelector("#cancel");
     let reply = document.querySelector("#reply");
+    let links = document.querySelectorAll(".links");
+    let tr = document.querySelectorAll(".tr");
+    let openBtn = document.querySelector(".openBtn");
 
+    let clearThisPage = function(){
+        let thisPage = document.querySelector(".thisPage");
+        thisPage.classList.remove("text-white");
+        thisPage.classList.remove("thisPage");
+    }
 
     window.onload = function () {
         // 抓當前頁面+當前頁面頁籤上色
         renderPageLink();
-
-        // 星星全滿與中空切換
-        change.addEventListener("click", function (e) {
-            icons.forEach(function (item, index) {
-                item.classList.toggle("d-none");
+        
+        // 切換當前頁籤
+        function getThisPage(item, index, arr){
+            item.addEventListener("click", function(e){
+                clearThisPage();
+                e.target.classList.add("text-white");
+                e.target.classList.add("thisPage");
             })
-        })
+        }        
+        links.forEach(getThisPage);
 
-        reply.addEventListener("click", function () {
-            userBlock.classList.add("d-none");
-            userBlockBtn.classList.add("d-none");
-            textEditor.classList.remove("d-none");
+        openBtn.addEventListener("click", function(){
+            openBtn.classList.toggle("openBtn-down");
+            openBtn.classList.toggle("openBtn-up");
         })
-
-        cancel.addEventListener("click", function () {
-            userBlock.classList.remove("d-none");
-            userBlockBtn.classList.remove("d-none");
-            textEditor.classList.add("d-none");
-        })
-
 
     }
 </script>

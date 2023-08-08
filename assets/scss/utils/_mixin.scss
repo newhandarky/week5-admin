@@ -60,13 +60,15 @@
     }
 }
 
-@mixin img-rotate{
+@mixin img-rotate($deg, $time){
     text-align:center;
-    -moz-transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-    transform:rotate(90deg);
+    -moz-transform:rotate($deg);
+    -webkit-transform:rotate($deg);
+    -o-transform:rotate($deg);
+    -ms-transform:rotate($deg);
+    transform:rotate($deg);
+    transition:$time;
+
 }
 
 @mixin media-992 {

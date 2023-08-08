@@ -1,0 +1,27 @@
+img{
+    max-width: 141px;
+    height: 141px;
+    object-fit: cover;
+}
+
+.openBtn-down{
+    transition: transform 0.3s ease;
+    transform: rotate(360deg);
+}
+.openBtn-up{
+    transition: transform 0.3s ease;
+    transform: rotate(180deg);
+}
+
+.bg-circle{
+    width: 24px;
+    height: 24px;
+}
+
+::placeholder{
+    color: $dark;
+}
+
+button::disable{
+    color: $secondary;
+}
