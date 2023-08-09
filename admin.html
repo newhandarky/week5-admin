@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>後臺系統Assignment頁面</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
-  <script type="module" crossorigin src="/week5-admin/assets/all-a5602041.js"></script>
-  <link rel="stylesheet" href="/week5-admin/assets/all-cc3d1909.css">
+  <script type="module" crossorigin src="/week5-admin/assets/bootstrap-e436822e.js"></script>
+  <link rel="stylesheet" href="/week5-admin/assets/bootstrap-cc3d1909.css">
 </head>
 
 <body>
@@ -194,7 +194,7 @@
                 <div class="border-bottom pb-6 mb-6">
                     <h6 class="fs-5 mb-4">Verification</h6>
                     <div class="d-flex mb-4">
-                        <div class="rounded-circle bg-circle me-2">
+                        <div class="rounded-circle bg-circle bg-success me-2">
                             <span class="material-symbols-outlined  text-light">
                                 done
                             </span>
@@ -296,7 +296,7 @@
                             <button class="btn py-2 px-8 btn-outline-danger rounded-0" data-bs-dismiss="modal">
                                 Deactivate
                             </button>
-                            <button class="btn py-2 px-8 btn-success rounded-0">
+                            <button class="btn py-2 px-8 btn-success rounded-0" data-bs-toggle="modal" data-bs-target="#editAdmin">
                                 Edit
                             </button>
                         </div>
@@ -348,15 +348,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#1</th>
                                     <td class="px-0 py-4">Emir Wicks</td>
                                     <td class="px-0 py-4">emir.wicks@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success" data-bs-toggle="modal" data-bs-target="#editAdmin">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end border-top">
+                                        <span class="material-symbols-outlined pointer text-dark link-success" data-bs-toggle="modal" data-bs-target="#viewAdmin">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -366,15 +364,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#2</th>
                                     <td class="px-0 py-4">Zaina Goldsmith</td>
                                     <td class="px-0 py-4">zaina.goldsmith@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -383,15 +379,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#3</th>
                                     <td class="px-0 py-4">Mahima Lopez</td>
                                     <td class="px-0 py-4">mahima.lopez@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -400,15 +394,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#4</th>
                                     <td class="px-0 py-4">Pharrell Murray</td>
                                     <td class="px-0 py-4">pharrell.murray@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -417,15 +409,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#5</th>
                                     <td class="px-0 py-4">Annika Mcbride</td>
                                     <td class="px-0 py-4">annika.mcbride@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -434,15 +424,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#6</th>
                                     <td class="px-0 py-4">Fatimah Clark</td>
                                     <td class="px-0 py-4">fatimah.clark@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -451,15 +439,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#7</th>
                                     <td class="px-0 py-4">Klaudia Rhodes</td>
                                     <td class="px-0 py-4">klaudia.rhodes@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -468,15 +454,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#8</th>
                                     <td class="px-0 py-4">Tillie Lucero</td>
                                     <td class="px-0 py-4">tillie.lucero@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -485,15 +469,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#9</th>
                                     <td class="px-0 py-4">Sabrina Stephenson</td>
                                     <td class="px-0 py-4">sabrina.stephenson@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -502,15 +484,13 @@
                                     <th scope="row" class="fw-normal px-0 py-4">#10</th>
                                     <td class="px-0 py-4">Annie Smith</td>
                                     <td class="px-0 py-4">annie.smith@mail.com</td>
-                                    <td class="px-0 py-4 d-flex align-items-center justify-content-between">
-                                        <span>Yes</span>
-                                        <span class="d-flex">
-                                            <span class="material-symbols-outlined pointer text-dark link-success">
-                                                visibility
-                                            </span>
-                                            <span class="material-symbols-outlined pointer text-dark link-success ms-6">
-                                                edit
-                                            </span>
+                                    <td>Yes</td>
+                                    <td class="px-0 py-4 d-flex align-items-center justify-content-end">
+                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                            visibility
+                                        </span>
+                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                            edit
                                         </span>
                                     </td>
                                 </tr>
@@ -537,9 +517,6 @@
     </ul>
 </div>
                 </div>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-                    crossorigin="anonymous"></script>
                 
 </body>
 
@@ -552,7 +529,6 @@
     let cancel = document.querySelector("#cancel");
     let reply = document.querySelector("#reply");
     let links = document.querySelectorAll(".links");
-    let tr = document.querySelectorAll(".tr");
     let openBtn = document.querySelector(".openBtn");
 
     let clearThisPage = function(){
