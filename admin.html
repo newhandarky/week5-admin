@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>後臺系統Assignment頁面</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
-  <script type="module" crossorigin src="/week5-admin/assets/bootstrap-e436822e.js"></script>
-  <link rel="stylesheet" href="/week5-admin/assets/bootstrap-cc3d1909.css">
+  <script type="module" crossorigin src="/week5-admin/assets/bootstrap.min-ab7ebc1a.js"></script>
+  <link rel="stylesheet" href="/week5-admin/assets/bootstrap-4a3d12e8.css">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
         <ul>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="dashboard"></div>
-                <a class="d-flex text-dark link-success fw-bold dashboard" href=""><span
-                        class="fs-7 me-3 material-symbols-outlined">
+                <a class="d-flex fw-bold dashboard" href=""><span
+                        class="fs-7 me-4 material-symbols-outlined">
                         insert_chart
                     </span>
                     Dashboard
@@ -29,8 +29,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="question"></div>
-                <a class="d-flex text-dark link-success fw-bold question" href=""><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold question" href=""><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         forum
                     </span>
                     Question
@@ -38,8 +38,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="assignment"></div>
-                <a class="d-flex text-dark link-success fw-bold assignment" href="assignment.html"><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold assignment" href="assignment.html"><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         assignment
                     </span>
                     Assignment
@@ -47,8 +47,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="course"></div>
-                <a class="d-flex text-dark link-success fw-bold course" href=""><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold course" href=""><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         video_library
                     </span>
                     Course
@@ -56,8 +56,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="admin"></div>
-                <a class="d-flex text-dark link-success fw-bold admin" href="admin.html"><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold admin" href="admin.html"><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         group
                     </span>
                     Admin
@@ -65,8 +65,8 @@
             </li>
             <li class="position-relative mb-4">
                 <div class="d-inline bg-success" data-div="settings"></div>
-                <a class="d-flex text-dark link-success fw-bold settings" href=""><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold settings" href=""><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         settings
                     </span>
                     Settings
@@ -75,7 +75,7 @@
         </ul>
     </div>
 
-    <div class="d-flex">
+    <div class="d-flex ms-8">
         <div>
             <img class="rounded-circle me-4"
                 src="https://github.com/newhandarky/week5-admin/blob/main/assets/images/andychen.jpeg?raw=true"
@@ -95,8 +95,8 @@
     let newStr = str[str.length - 1].split('.');
     let renderPageLink = function(){
         // 抓當前頁面+當前頁面頁籤上色
-        document.querySelector(`.${newStr[0]}`).parentElement.firstElementChild.classList.add("onPage")
-        document.querySelector(`.${newStr[0]}`).classList.remove("text-dark");
+        document.querySelector(`.${newStr[0]}`).parentElement.firstElementChild.classList.add("onPage");
+        document.querySelector(`.${newStr[0]}`).classList.add("text-success");
     }
 
 
@@ -310,10 +310,10 @@
                 <div class="container">
                     <header class="d-flex justify-content-between py-8">
                         <div class="d-flex">
-                            <h2 class="fs-4 me-12">Admin</h2>
+                            <h2 class="me-12">Admin</h2>
                             <div class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newAdmin">
-                                <span class="d-flex text-dark fw-bold p-0 pointer">
-                                    <span class="material-symbols-outlined text-success me-2">
+                                <span class="d-flex fw-bold p-0 pointer">
+                                    <span class="material-symbols-outlined  text-success me-2">
                                         add
                                     </span>Add New Admin</span>
                             </div>
@@ -334,7 +334,7 @@
                             <thead>
                                 <tr>
                                     <th class="pb-1 ps-0 d-flex align-items-center" scope="col">ID
-                                        <span class="material-symbols-outlined text-success font-md ms-1">
+                                        <span class="material-symbols-outlined  font-md ms-1">
                                             arrow_downward
                                         </span>
                                     </th>
@@ -350,10 +350,10 @@
                                     <td class="px-0 py-4">emir.wicks@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end border-top">
-                                        <span class="material-symbols-outlined pointer text-dark link-success" data-bs-toggle="modal" data-bs-target="#viewAdmin">
+                                        <span class="material-symbols-outlined pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6" data-bs-toggle="modal" data-bs-target="#editAdmin">
+                                        <span class="material-symbols-outlined pointer ms-6" data-bs-toggle="modal" data-bs-target="#editAdmin">
                                             edit
                                         </span>
                                     </td>
@@ -366,10 +366,10 @@
                                     <td class="px-0 py-4">zaina.goldsmith@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -381,10 +381,10 @@
                                     <td class="px-0 py-4">mahima.lopez@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -396,10 +396,10 @@
                                     <td class="px-0 py-4">pharrell.murray@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -411,10 +411,10 @@
                                     <td class="px-0 py-4">annika.mcbride@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -426,10 +426,10 @@
                                     <td class="px-0 py-4">fatimah.clark@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -441,10 +441,10 @@
                                     <td class="px-0 py-4">klaudia.rhodes@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -456,10 +456,10 @@
                                     <td class="px-0 py-4">tillie.lucero@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -471,10 +471,10 @@
                                     <td class="px-0 py-4">sabrina.stephenson@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
@@ -486,10 +486,10 @@
                                     <td class="px-0 py-4">annie.smith@mail.com</td>
                                     <td>Yes</td>
                                     <td class="px-0 py-4 d-flex align-items-center justify-content-end">
-                                        <span class="material-symbols-outlined pointer text-dark link-success">
+                                        <span class="material-symbols-outlined pointer">
                                             visibility
                                         </span>
-                                        <span class="material-symbols-outlined pointer text-dark link-success ms-6">
+                                        <span class="material-symbols-outlined pointer ms-6">
                                             edit
                                         </span>
                                     </td>
