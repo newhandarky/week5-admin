@@ -12,3 +12,9 @@
 .thisPage{
     background: $success;
 }
+
+td span{
+    &:hover{
+        color: $success;
+    }
+}

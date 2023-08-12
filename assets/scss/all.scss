@@ -1,13 +1,16 @@
-// util
-@import "./utils/mixin";
+// functions 
+@import "../node_modules/bootstrap/scss/functions";
+
+// base
+@import "./base/variables";
 
 // vendors
 @import 'bootstrap/scss/bootstrap.scss';
 
-// base
-@import "./base/generic";
+// util
 @import "./base/base";
-// @import "./base/copy_bootstrap_variables";
+@import "./base/generic";
+@import "./utils/mixin";
 
 // layout
 @import "./layout/header-admin";
@@ -19,3 +22,4 @@
 // pages
 @import './pages/assignment';
 @import "./pages/admin";
+

@@ -4,8 +4,8 @@
         <ul>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="dashboard"></div>
-                <a class="d-flex text-dark link-success fw-bold dashboard" href=""><span
-                        class="fs-7 me-3 material-symbols-outlined">
+                <a class="d-flex fw-bold dashboard" href=""><span
+                        class="fs-7 me-4 material-symbols-outlined">
                         insert_chart
                     </span>
                     Dashboard
@@ -13,8 +13,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="question"></div>
-                <a class="d-flex text-dark link-success fw-bold question" href=""><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold question" href=""><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         forum
                     </span>
                     Question
@@ -22,8 +22,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="assignment"></div>
-                <a class="d-flex text-dark link-success fw-bold assignment" href="assignment.html"><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold assignment" href="assignment.html"><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         assignment
                     </span>
                     Assignment
@@ -31,8 +31,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="course"></div>
-                <a class="d-flex text-dark link-success fw-bold course" href=""><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold course" href=""><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         video_library
                     </span>
                     Course
@@ -40,8 +40,8 @@
             </li>
             <li class="position-relative mb-6">
                 <div class="d-inline bg-success" data-div="admin"></div>
-                <a class="d-flex text-dark link-success fw-bold admin" href="admin.html"><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold admin" href="admin.html"><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         group
                     </span>
                     Admin
@@ -49,8 +49,8 @@
             </li>
             <li class="position-relative mb-4">
                 <div class="d-inline bg-success" data-div="settings"></div>
-                <a class="d-flex text-dark link-success fw-bold settings" href=""><span
-                        class="fs-7 me-3  material-symbols-outlined">
+                <a class="d-flex fw-bold settings" href=""><span
+                        class="fs-7 me-4  material-symbols-outlined">
                         settings
                     </span>
                     Settings
@@ -59,7 +59,7 @@
         </ul>
     </div>
 
-    <div class="d-flex">
+    <div class="d-flex ms-8">
         <div>
             <img class="rounded-circle me-4"
                 src="https://github.com/newhandarky/week5-admin/blob/main/assets/images/andychen.jpeg?raw=true"
@@ -79,8 +79,8 @@
     let newStr = str[str.length - 1].split('.');
     let renderPageLink = function(){
         // 抓當前頁面+當前頁面頁籤上色
-        document.querySelector(`.${newStr[0]}`).parentElement.firstElementChild.classList.add("onPage")
-        document.querySelector(`.${newStr[0]}`).classList.remove("text-dark");
+        document.querySelector(`.${newStr[0]}`).parentElement.firstElementChild.classList.add("onPage");
+        document.querySelector(`.${newStr[0]}`).classList.add("text-success");
     }
 
 

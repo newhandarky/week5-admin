@@ -5,15 +5,15 @@
 *,*::before,*::after{
 	box-sizing: border-box;
 }
-htnl{
-	height: 100%;
+html{
+	// height: 100%;
 }
 
 body {
-	height: 100%;
+	// height: 100%;
 	font-size: 16px;
 	line-height: 1.5;
-	font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Roboto Mono', monospace, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Lato', 'Roboto Mono', -apple-system, BlinkMacSystemFont,  monospace, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 img{
@@ -22,22 +22,9 @@ img{
 	height: auto;
 }
 
-a{
-	text-decoration: none;
-}
-
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6, a, p{
 	margin: 0;
 	padding: 0;
-	color: $gray-900;
-	font-size: 1rem;
-	font-weight: bold;
-}
-p,a{
-	margin: 0;
-	padding: 0;
-	color: $gray-900;
-	font-size: 1rem;
 }
 
 ul, ol, li{
