@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>後臺系統Assignment頁面</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
-  <script type="module" crossorigin src="/week5-admin/assets/bootstrap.min-ab7ebc1a.js"></script>
-  <link rel="stylesheet" href="/week5-admin/assets/bootstrap-4a3d12e8.css">
+  <script type="module" crossorigin src="/week5-admin/assets/bootstrap.min-8b3bd95e.js"></script>
+  <link rel="stylesheet" href="/week5-admin/assets/bootstrap-47db6f96.css">
 </head>
 
 <body>
-    <div class="content d-flex">
-
-        <nav class="d-flex flex-column justify-content-between py-8 ps-8 pe-14 bg-light">
+    <div class="content">
+        <nav class="d-flex flex-column justify-content-between py-8 ps-8 pe-14 bg-light position-fixed h-100">
     <div>
         <h1><a class="d-block mb-8" href="index.html">我是標題</a></h1>
         <ul>
@@ -75,7 +74,7 @@
         </ul>
     </div>
 
-    <div class="d-flex ms-8">
+    <div class="d-flex">
         <div>
             <img class="rounded-circle me-4"
                 src="https://github.com/newhandarky/week5-admin/blob/main/assets/images/andychen.jpeg?raw=true"
@@ -100,7 +99,8 @@
     }
 
 
-</script>            <!-- add new admin -->
+</script>
+            <!-- add new admin -->
 <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="newAdmin" tabindex="-1"
     aria-labelledby="newAdminLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
@@ -112,10 +112,14 @@
             <div class="modal-body border-bottom-0 px-8 py-0 mb-9">
                 <div class="border-bottom pb-6 mb-6">
                     <h6 class="fs-5 mb-4">Account</h6>
-                    <label class="mb-1 d-block" for="name">Name</label>
-                    <input class="w-100 py-3  mb-4" id="name" type="text">
-                    <label class="mb-1 d-block" for="mail">Email</label>
-                    <input class="w-100 py-3" id="mail" type="email">
+                    <div>
+                        <label class="mb-1 d-block form-label" for="addName">Name</label>
+                        <input class="w-100 py-3 mb-4 form-control" id="addName" type="text">
+                    </div>
+                    <div>
+                        <label class="mb-1 d-block form-label" for="addMail">Email</label>
+                        <input class="w-100 py-3 form-control" id="addMail" type="email">
+                    </div>
                 </div>
                 <div class="border-bottom pb-6 mb-6">
                     <h6 class="fs-5 mb-4">Verification</h6>
@@ -129,7 +133,7 @@
                 <div class="border-bottom pb-6 mb-4">
                     <h6 class="fs-5 mb-4">Access Level</h6>
                     <div class="d-flex">
-                        <select class="w-100 p-4" name="level" id="level">
+                        <select class="form-select w-100 p-4" name="level" id="setLevel" aria-label="Default select example">
                             <option value="-Choose access level-">-Choose access level-</option>
                             <option value="lv1">lv1</option>
                             <option value="lv2">lv2</option>
@@ -143,24 +147,24 @@
                     <h6 class="fs-5 mb-4">Custom Access</h6>
                     <div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="lecture">
-                            <label for="lecture">Lecture</label>
+                            <input class="me-2" type="checkbox" name="" id="setLecture">
+                            <label for="setLecture">Lecture</label>
                         </div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="coupon">
-                            <label for="coupon">Coupon</label>
+                            <input class="me-2" type="checkbox" name="" id="setCoupon">
+                            <label for="setCoupon">Coupon</label>
                         </div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="message">
-                            <label for="message">Message</label>
+                            <input class="me-2" type="checkbox" name="" id="setMessage">
+                            <label for="setMessage">Message</label>
                         </div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="setting">
-                            <label for="setting">Setting</label>
+                            <input class="me-2" type="checkbox" name="" id="setSetting">
+                            <label for="setSetting">Setting</label>
                         </div>
                         <div>
-                            <input class="me-2" type="checkbox" name="" id="taskMenu">
-                            <label for="taskMenu">Task Menu</label>
+                            <input class="me-2" type="checkbox" name="" id="setTaskMenu">
+                            <label for="setTaskMenu">Task Menu</label>
                         </div>
                     </div>
                 </div>
@@ -186,10 +190,10 @@
             <div class="modal-body border-bottom-0 px-8 py-0 mb-9">
                 <div class="border-bottom pb-6 mb-6">
                     <h6 class="fs-5 mb-4">Account</h6>
-                    <label class="mb-1 d-block" for="name">Name</label>
-                    <input class="w-100 py-3 ps-4 border-0 mb-4" id="name" type="text" disabled placeholder="Emir Wicks">
-                    <label class="mb-1 d-block" for="mail">Email</label>
-                    <input class="w-100 py-3 ps-4 border-0" id="mail" type="email" disabled placeholder="emir.wicks@mail.com">
+                    <label class="mb-1 d-block" for="editName">Name</label>
+                    <input class="w-100 py-3 ps-4 border-0 mb-4" id="editName" type="text" readonly placeholder="Emir Wicks">
+                    <label class="mb-1 d-block" for="editMail">Email</label>
+                    <input class="w-100 py-3 ps-4 border-0" id="editMail" type="email" readonly placeholder="emir.wicks@mail.com">
                 </div>
                 <div class="border-bottom pb-6 mb-6">
                     <h6 class="fs-5 mb-4">Verification</h6>
@@ -209,7 +213,7 @@
                 <div class="border-bottom pb-6 mb-4">
                     <h6 class="fs-5 mb-4">Access Level</h6>
                     <div class="d-flex">
-                        <select class="w-100 p-4" name="level" id="level">
+                        <select class="w-100 p-4" name="level" id="editLevel">
                             <option value="-Choose access level-">Admin</option>
                             <option value="lv1">lv1</option>
                             <option value="lv2">lv2</option>
@@ -223,24 +227,24 @@
                     <h6 class="fs-5 mb-4">Custom Access</h6>
                     <div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="lecture">
-                            <label for="lecture">Lecture</label>
+                            <input class="me-2" type="checkbox" name="" id="editLecture">
+                            <label for="editLecture">Lecture</label>
                         </div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="coupon">
-                            <label for="coupon">Coupon</label>
+                            <input class="me-2" type="checkbox" name="" id="editCoupon">
+                            <label for="editCoupon">Coupon</label>
                         </div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="message">
-                            <label for="message">Message</label>
+                            <input class="me-2" type="checkbox" name="" id="editMessage">
+                            <label for="editMessage">Message</label>
                         </div>
                         <div class="mb-4">
-                            <input class="me-2" type="checkbox" name="" id="setting">
-                            <label for="setting">Setting</label>
+                            <input class="me-2" type="checkbox" name="" id="editSetting">
+                            <label for="editSetting">Setting</label>
                         </div>
                         <div>
-                            <input class="me-2" type="checkbox" name="" id="taskMenu">
-                            <label for="taskMenu">Task Menu</label>
+                            <input class="me-2" type="checkbox" name="" id="editTaskMenu">
+                            <label for="editTaskMenu">Task Menu</label>
                         </div>
                     </div>
                 </div>
