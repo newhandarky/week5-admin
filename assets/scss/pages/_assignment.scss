@@ -20,3 +20,31 @@ aside{
 .img-rotate{
   @include img-rotate(90deg, 0s);
 }
+
+.dropdown-toggle::after{
+  display: none;
+}
+
+span.dropdownAll4{
+  top: -28px;
+}
+
+aside ul{
+  width: 320px;
+}
+.dropdownAll4{
+  top: -22px;
+}
+
+
+
+.text-space-24::after{
+  content: "";
+  display: inline-block;
+  width: 24px;
+}
+.text-space-12::after{
+  content: "";
+  display: inline-block;
+  width: 12px;
+}
